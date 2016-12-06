@@ -91,7 +91,7 @@
 
       // Attach trigger using click event
       if (setting.trigger && setting.trigger.length > 0) {
-        setting.trigger.on('click.slideReveal', function() {
+        setting.trigger.click(function() {
           if (!$el.data("slide-reveal")) { // Show
             self.show();
           } else { // Hide
